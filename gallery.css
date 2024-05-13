@@ -1,0 +1,255 @@
+
+body, html {
+    height: 100%;
+    margin: 0px;
+  background-color: #151618;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  :root{
+    --font: 'Montserrat', sans-serif;
+    --prime-font: 'Work Sans', sans-serif;
+    --bg: black;
+    --main-color: #f9813a;
+    --main-font-color: #fdfbfb;
+    --sec-font-color: #fcf1f1b4;
+
+}
+body{
+    background: var(--bg);
+    font-family: var(--font);
+    color: black;
+    overflow-x: hidden;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ---navbar--- */
+.nav{
+    width: 85%;
+    height: 70px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: #000;
+    color: var(--sec-font-color);
+}
+.checkBtn{
+    display: none;
+}
+.nav.logo{
+    font-size: 2em;
+    color: var(--sec-font-color);
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul a{
+    text-decoration: none;
+    color: var(--sec-font-color);
+    margin: 0.3em;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    
+}
+nav ul a:hover{
+    transition: background .8s;
+    background-color: #f9813a;
+}
+  
+  
+  
+  .bg-image {
+    /* Full height */
+    height: 50%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("bg.jpg"); }
+  .img2 { background-image: url("16.jpg"); }
+
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgb(0, 0, 0); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border: 10px solid #f1f1f1;
+    position: absolute; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h2 {
+    font-size: 30px;
+    word-break: break-all;
+    color: white;
+    text-align: center;
+  }
+  
+  .row {
+    margin: 10px auto;
+    
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    margin-left: 10px;
+   
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 20px;
+    float: left;
+    width: 32.33%;
+    display: table;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    
+  }
+  .row .content a{
+    text-decoration: none;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    align-content: center;
+    position: relative;
+    margin-left: 40%;
+    margin-bottom: 5px;
+}
+.row .content a:hover{
+    background-color: #666;
+}
+  
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+   .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.footer p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.footer hr{
+  margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: grey;
+}
